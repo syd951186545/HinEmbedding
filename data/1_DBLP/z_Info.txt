@@ -1,0 +1,19 @@
+#########number of  node:
+
+@author:		14475
+@labeled author:	4057
+
+@conference:		20
+@labeled conference:	20
+
+@paper:		14376
+@labeled paper:	100
+
+@term:		8920
+@labeled term:	0
+
+#########number of edge：
+@Paper---Author:		41794
+@Paper---Conference:	14376
+@Paper---Term:		114624
+
