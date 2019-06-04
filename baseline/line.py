@@ -4,7 +4,7 @@ import math
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 import tensorflow as tf
-from evaluation.node_classification import Classifier, read_node_label
+from .classify import Classifier, read_node_label
 
 
 class _LINE(object):

@@ -1,7 +1,7 @@
 from __future__ import print_function
 import time
 from gensim.models import Word2Vec
-import sampling.walker
+from . import walker
 
 
 class Node2vec(object):
@@ -39,9 +39,9 @@ class Node2vec(object):
 
     def save_embeddings(self, filename):
         fout = open(filename, 'w')
-        self.vectors = dict(sorted(self.vectors.items(), key = lambda item:int(item[0]))) #按照key排序 vectors，若按照value排序vectors，item[1]
         node_num = len(self.vectors.keys())
         fout.write("{} {}\n".format(node_num, self.size))
         for node, vec in self.vectors.items():
-            fout.write("{} {}\n".format(node, ' '.join([str(x) for x in vec])))
+            fout.write("{} {}\n".format(node,
+                                        ' '.join([str(x) for x in vec])))
         fout.close()
