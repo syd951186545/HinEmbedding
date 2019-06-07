@@ -14,4 +14,5 @@ B238-异质信息网络表示
 !异质网络!  可以转换为同质网络数据edgelist格式，之后直接运行Main.py如上
 # 转换使用.utils/HinData2EdgeFile.py 参数见该文件
 
-
+!数据集格式转换!   可以对原始数据集的指定节点重新统一编号并保存映射，可以记录映射后的节点连接关系
+# 转换使用.utils/trans_data_raw.py  设置参数为文件中nodes_dict和edges_dict两个字典
